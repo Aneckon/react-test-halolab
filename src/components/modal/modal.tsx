@@ -64,6 +64,7 @@ export const Modal: FC<Modal> = ({ modal, setModal }) => {
     e.preventDefault();
     if (name.length && name.indexOf(' ') && number.length && number.indexOf(' ')) {
       console.log({ name, number });
+      setModal(false);
     }
   };
 
